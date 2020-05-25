@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';   
+import './App.css'
+import Todo from './components/Todo/Todo';
+import AddTodo from './components/AddTodo/AddTodo';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+ const [todos,setTodos] = useState([]);
+ const addTodo=(todo)=>{
+    setTodos([...todos, todo])
+ }
+ const deleteTodo = description => {
+    const newTodos = todos.filter(todo => todo.description !== description)
+    setTodos(newTodos)
+ }
+    return ( 
+        <div className='container'>
+            <div className='wrap'>
+               <div className='text'>
+                  <h2>Todo</h2>
+               </div>
+                  <AddTodo addTodo={addTodo} />
+                  <div className="dropdown-divider"></div>
+                  <Todo todos={todos} deleteTodo={deleteTodo}/>
+            </div> 
+        </div>
+     );
+  }   
 
-export default App;
+ 
+export default App ;

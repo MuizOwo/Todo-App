@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+.container{
+  border: 1px solid lightblue;
+  background:lightblue;
+  margin:20px 0
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown-divider{
+  background-color:black
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrap{
+  margin: 20px
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+.text{
+  text-align:center;
+  font-size: 30px;
+  color:#003459;
+    font-family: 'Slabo 27px', serif;
 }

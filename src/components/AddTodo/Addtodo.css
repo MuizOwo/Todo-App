@@ -1,0 +1,19 @@
+.add-todo{
+    /* margin : 20px 100px ; */
+    align-items: center;
+    
+}
+.form{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin : 20px 20px ;
+}
+.input{
+    margin:0 15px;
+    width:40%;
+}
+.des{
+    width:40%;
+    margin: 0 15px 0 0
+}
